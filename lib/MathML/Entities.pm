@@ -4,7 +4,7 @@
 # All Rights Reserved.
 # Licensed under the Perl Artistic License.
 #
-# Version: 0.11
+# Version: 0.12
 
 package MathML::Entities;
 
@@ -13,9 +13,9 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw( name2numbered name2utf8 );
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
-my %ENTITIES = (
+our %ENTITIES = (
 	'Alpha' => '&#x0391;',
 	'Beta' => '&#x0392;',
 	'Epsilon' => '&#x0395;',

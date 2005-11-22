@@ -1,5 +1,9 @@
 Revision history for Perl module MathML::Entities
 
+0.12 Tue Nov 22 16:45:00 2005
+	- Made %ENTITIES a global hash, so that users can access it
+	  as $MathML::Entities::Entities
+
 0.11 Tue Jan 11 09:22:06 2005
 	- original version; created by ExtUtils::ModuleMaker 0.32
         - First public release
