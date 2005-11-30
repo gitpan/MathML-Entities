@@ -4,7 +4,7 @@
 # All Rights Reserved.
 # Licensed under the Perl Artistic License.
 #
-# Version: 0.12
+# Version: 0.13
 
 package MathML::Entities;
 
@@ -13,7 +13,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw( name2numbered name2utf8 );
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 our %ENTITIES = (
 	'Alpha' => '&#x0391;',
@@ -40,7 +40,6 @@ our %ENTITIES = (
 	'alefsym' => '&#x2135;',
 	'crarr' => '&#x21B5;',
 	'empty' => '&#x2205;',
-	'hearts' => '&#x2265;',
 	'amp' => '&#x0026;',
 	'lt' => '&#x003C;',
 	'zwnj' => '&#x200C;',
