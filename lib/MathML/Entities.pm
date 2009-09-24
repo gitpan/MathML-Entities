@@ -1,10 +1,10 @@
 # MathML::Entitities
 #
-# Copyright, Jacques Distler 2005.
+# Copyright, Jacques Distler 2005-2009.
 # All Rights Reserved.
 # Licensed under the Perl Artistic License.
 #
-# Version: 0.13
+# Version: 0.14
 
 package MathML::Entities;
 
@@ -13,7 +13,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw( name2numbered name2utf8 );
-our $VERSION = '0.13';
+our $VERSION = '0.14';
 
 our %ENTITIES = (
 	'Alpha' => '&#x0391;',
@@ -460,7 +460,7 @@ our %ENTITIES = (
 	'iiota' => '&#x02129;',
 	'image' => '&#x02111;',
 	'imath' => '&#x00131;',
-	'jmath' => '&#x0006A;',
+	'jmath' => '&#x00237;',
 	'laemptyv' => '&#x029B4;',
 	'lltri' => '&#x025FA;',
 	'lrtri' => '&#x022BF;',
@@ -474,7 +474,7 @@ our %ENTITIES = (
 	'range' => '&#x029A5;',
 	'real' => '&#x0211C;',
 	'tbrk' => '&#x023B4;',
-	'trpezium' => '&#x0FFFD;',
+	'trpezium' => '&#x023E2;',
 	'ultri' => '&#x025F8;',
 	'urtri' => '&#x025F9;',
 	'vzigzag' => '&#x0299A;',
@@ -872,7 +872,7 @@ our %ENTITIES = (
 	'dsol' => '&#x029F6;',
 	'dtdot' => '&#x022F1;',
 	'dwangle' => '&#x029A6;',
-	'elinters' => '&#x0FFFD;',
+	'elinters' => '&#x023E7;',
 	'epar' => '&#x022D5;',
 	'eparsl' => '&#x029E3;',
 	'equiv' => '&#x02261;',
@@ -899,13 +899,13 @@ our %ENTITIES = (
 	'isinsv' => '&#x022F3;',
 	'isinv' => '&#x02208;',
 	'lagran' => '&#x02112;',
-	'Lang' => '&#x0300A;',
-	'lang' => '&#x02329;',
+	'Lang' => '&#x027EA;',
+	'lang' => '&#x027E8;',
 	'lArr' => '&#x021D0;',
-	'lbbrk' => '&#x03014;',
+	'lbbrk' => '&#x02772;',
 	'le' => '&#x02264;',
-	'loang' => '&#x03018;',
-	'lobrk' => '&#x0301A;',
+	'loang' => '&#x027EC;',
+	'lobrk' => '&#x027E6;',
 	'lopar' => '&#x02985;',
 	'lowast' => '&#x02217;',
 	'minus' => '&#x02212;',
@@ -959,12 +959,12 @@ our %ENTITIES = (
 	'qprime' => '&#x02057;',
 	'quatint' => '&#x02A16;',
 	'radic' => '&#x0221A;',
-	'Rang' => '&#x0300B;',
-	'rang' => '&#x0232A;',
+	'Rang' => '&#x027EB;',
+	'rang' => '&#x027E9;',
 	'rArr' => '&#x021D2;',
-	'rbbrk' => '&#x03015;',
-	'roang' => '&#x03019;',
-	'robrk' => '&#x0301B;',
+	'rbbrk' => '&#x02773;',
+	'roang' => '&#x027ED;',
+	'robrk' => '&#x027E7;',
 	'ropar' => '&#x02986;',
 	'rppolint' => '&#x02A12;',
 	'scpolint' => '&#x02A13;',
@@ -1426,6 +1426,7 @@ our %ENTITIES = (
 	'fflig' => '&#x0FB00;',
 	'ffllig' => '&#x0FB04;',
 	'filig' => '&#x0FB01;',
+	'fjlig' => '&#x00066;&#x0006A;',
 	'flat' => '&#x0266D;',
 	'fllig' => '&#x0FB02;',
 	'frac13' => '&#x02153;',
@@ -1550,9 +1551,9 @@ our %ENTITIES = (
 	'NotSucceedsTilde' => '&#x0227F;&#x00338;',
 	'oopf' => '&#x1D560;',
 	'OverBar' => '&#x000AF;',
-	'OverBrace' => '&#x0FE37;',
+	'OverBrace' => '&#x023DE;',
 	'OverBracket' => '&#x023B4;',
-	'OverParenthesis' => '&#x0FE35;',
+	'OverParenthesis' => '&#x023DC;',
 	'planckh' => '&#x0210E;',
 	'popf' => '&#x1D561;',
 	'Product' => '&#x0220F;',
@@ -1574,9 +1575,9 @@ our %ENTITIES = (
 	'ThickSpace' => '&#x02009;&#x0200A;&#x0200A;',
 	'topf' => '&#x1D565;',
 	'UnderBar' => '&#x00332;',
-	'UnderBrace' => '&#x0FE38;',
+	'UnderBrace' => '&#x023DF;',
 	'UnderBracket' => '&#x023B5;',
-	'UnderParenthesis' => '&#x0FE36;',
+	'UnderParenthesis' => '&#x023DD;',
 	'uopf' => '&#x1D566;',
 	'UpArrowBar' => '&#x02912;',
 	'Upsilon' => '&#x003A5;',
@@ -1780,11 +1781,11 @@ our %ENTITIES = (
 	'intprod' => '&#x02A3C;',
 	'InvisibleComma' => '&#x02063;',
 	'InvisibleTimes' => '&#x02062;',
-	'langle' => '&#x02329;',
+	'langle' => '&#x027E8;',
 	'Laplacetrf' => '&#x02112;',
 	'lbrace' => '&#x0007B;',
 	'lbrack' => '&#x0005B;',
-	'LeftAngleBracket' => '&#x02329;',
+	'LeftAngleBracket' => '&#x027E8;',
 	'LeftArrow' => '&#x02190;',
 	'Leftarrow' => '&#x021D0;',
 	'leftarrow' => '&#x02190;',
@@ -1792,7 +1793,7 @@ our %ENTITIES = (
 	'LeftArrowRightArrow' => '&#x021C6;',
 	'leftarrowtail' => '&#x021A2;',
 	'LeftCeiling' => '&#x02308;',
-	'LeftDoubleBracket' => '&#x0301A;',
+	'LeftDoubleBracket' => '&#x027E6;',
 	'LeftDownVector' => '&#x021C3;',
 	'LeftFloor' => '&#x0230A;',
 	'leftharpoondown' => '&#x021BD;',
@@ -1972,7 +1973,7 @@ our %ENTITIES = (
 	'propto' => '&#x0221D;',
 	'quaternions' => '&#x0210D;',
 	'questeq' => '&#x0225F;',
-	'rangle' => '&#x0232A;',
+	'rangle' => '&#x027E9;',
 	'rationals' => '&#x0211A;',
 	'rbrace' => '&#x0007D;',
 	'rbrack' => '&#x0005D;',
@@ -1983,7 +1984,7 @@ our %ENTITIES = (
 	'ReverseElement' => '&#x0220B;',
 	'ReverseEquilibrium' => '&#x021CB;',
 	'ReverseUpEquilibrium' => '&#x0296F;',
-	'RightAngleBracket' => '&#x0232A;',
+	'RightAngleBracket' => '&#x027E9;',
 	'RightArrow' => '&#x02192;',
 	'Rightarrow' => '&#x021D2;',
 	'rightarrow' => '&#x02192;',
@@ -1991,7 +1992,7 @@ our %ENTITIES = (
 	'RightArrowLeftArrow' => '&#x021C4;',
 	'rightarrowtail' => '&#x021A3;',
 	'RightCeiling' => '&#x02309;',
-	'RightDoubleBracket' => '&#x0301B;',
+	'RightDoubleBracket' => '&#x027E7;',
 	'RightDownVector' => '&#x021C2;',
 	'RightFloor' => '&#x0230B;',
 	'rightharpoondown' => '&#x021C1;',

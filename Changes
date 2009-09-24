@@ -1,5 +1,9 @@
 Revision history for Perl module MathML::Entities
 
+0.14 Thu Sep 24 15:43:00 2009
+    - Revise some entity mappings to bring up-to-date with
+      http://www.w3.org/TR/2008/WD-xml-entity-names-20080721/
+
 0.13 Wed Nov 30 15:25:00 2005
 	- Duplicate (incorrect) mapping for &hearts; removed.
           (hat tip: ShisslerP@cadmus.com)
