@@ -4,7 +4,7 @@
 # All Rights Reserved.
 # Licensed under the Perl Artistic License.
 #
-# Version: 0.15
+# Version: 0.16
 
 package MathML::Entities;
 
@@ -13,7 +13,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw( name2numbered name2utf8 );
-our $VERSION = '0.15';
+our $VERSION = '0.16';
 
 our %ENTITIES = (
 	'Alpha' => '&#x0391;',
@@ -2150,13 +2150,13 @@ our %ENTITIES = (
 
 sub name2numbered {
     my $content = shift;
-    $content =~ s/(&(?:(lt|gt|amp|quot|apos)|[a-zA-Z0-9]+);)/$2 ? $1 : _convert2numbered($1)/eg;
+    $content =~ s/(&(?:(lt|gt|amp|quot|apos)|[a-zA-Z0-9]+);)/$2 ? lc($1) : _convert2numbered($1)/eig;
     return $content;
 }
 
 sub name2utf8 {
     my $content = shift;
-    $content =~ s/(&(?:(lt|gt|amp|quot|apos)|[a-zA-Z0-9]+);)/$2 ? $1 : _convert2utf8($1)/eg;
+    $content =~ s/(&(?:(lt|gt|amp|quot|apos)|[a-zA-Z0-9]+);)/$2 ? lc($1) : _convert2utf8($1)/eig;
     return $content;
 }
 

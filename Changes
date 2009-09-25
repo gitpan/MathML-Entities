@@ -1,5 +1,11 @@
 Revision history for Perl module MathML::Entities
 
+0.16 Fri Sep 25 17:55:00 2009
+    - Convert HTML5 uppercase versions of
+      XML's "safe five" entities to their
+      lowercase equivalents. This is surely
+      more useful than expanding them.
+
 0.15 Fri Sep 25 13:17:00 2009
     - Bring up-to-date with Editor's copy of
       XML Entity definitions for Characters
