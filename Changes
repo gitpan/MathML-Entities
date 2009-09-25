@@ -1,5 +1,11 @@
 Revision history for Perl module MathML::Entities
 
+0.15 Fri Sep 25 13:17:00 2009
+    - Bring up-to-date with Editor's copy of
+      XML Entity definitions for Characters
+      (W3C Working Draft 13 September 2009)
+      http://www.w3.org/2003/entities/2007doc/overview.html
+
 0.14 Thu Sep 24 15:43:00 2009
     - Revise some entity mappings to bring up-to-date with
       http://www.w3.org/TR/2008/WD-xml-entity-names-20080721/

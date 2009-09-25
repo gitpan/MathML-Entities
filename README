@@ -22,9 +22,6 @@ DESCRIPTION
     characters. Named entities which are not in the XHTML+MathML DTD are
     escaped. This makes the resulting XHTML (or XHTML+MathML) safe for
     consumption by non-validating XML parsers.
-    
-    The named entities supported by this version are described in the W3C
-    document http://www.w3.org/TR/2008/WD-xml-entity-names-20080721/ .
 
     Unlike, HTML::Entities, the mapping between MathML named entities and
     codepoints is many-to-one. Therefore, there's no particular sense in
@@ -77,5 +74,6 @@ COPYRIGHT
 SEE ALSO
         HTML::Entities, HTML::Entities::Numbered,
         <http://www.w3.org/TR/REC-html40/sgml/entities.html>,
+        <http://www.w3.org/2003/entities/2007doc/overview.html>,
         <http://www.w3.org/Math/characters/>
 

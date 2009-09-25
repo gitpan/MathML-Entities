@@ -4,7 +4,7 @@
 # All Rights Reserved.
 # Licensed under the Perl Artistic License.
 #
-# Version: 0.14
+# Version: 0.15
 
 package MathML::Entities;
 
@@ -13,7 +13,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw( name2numbered name2utf8 );
-our $VERSION = '0.14';
+our $VERSION = '0.15';
 
 our %ENTITIES = (
 	'Alpha' => '&#x0391;',
@@ -272,7 +272,7 @@ our %ENTITIES = (
 	'plussim' => '&#x02A26;',
 	'plustwo' => '&#x02A27;',
 	'prod' => '&#x0220F;',
-	'race' => '&#x029DA;',
+	'race' => '&#x0223D;&#x0331;',
 	'roplus' => '&#x02A2E;',
 	'rotimes' => '&#x02A35;',
 	'rthree' => '&#x022CC;',
@@ -680,8 +680,10 @@ our %ENTITIES = (
 	'nu' => '&#x003BD;',
 	'Omega' => '&#x003A9;',
 	'omega' => '&#x003C9;',
+	'phgr' => '&#x003C6;',
 	'Phi' => '&#x003A6;',
-	'phi' => '&#x003D5;',
+	'phi' => '&#x003C6;',
+	'phis' => '&#x003D5;',
 	'phiv' => '&#x003C6;',
 	'Pi' => '&#x003A0;',
 	'pi' => '&#x003C0;',
@@ -842,7 +844,7 @@ our %ENTITIES = (
 	'andv' => '&#x02A5A;',
 	'angrt' => '&#x0221F;',
 	'angsph' => '&#x02222;',
-	'angst' => '&#x0212B;',
+	'angst' => '&#x000C5;',
 	'ap' => '&#x02248;',
 	'apacir' => '&#x02A6F;',
 	'awconint' => '&#x02233;',
@@ -1365,7 +1367,7 @@ our %ENTITIES = (
 	'nbsp' => '&#x000A0;',
 	'not' => '&#x000AC;',
 	'num' => '&#x00023;',
-	'ohm' => '&#x02126;',
+	'ohm' => '&#x03A9;',
 	'ordf' => '&#x000AA;',
 	'ordm' => '&#x000BA;',
 	'para' => '&#x000B6;',
@@ -2136,7 +2138,14 @@ our %ENTITIES = (
 	'wedge' => '&#x02227;',
 	'wp' => '&#x02118;',
 	'wr' => '&#x02240;',
-	'zeetrf' => '&#x02128;'
+	'zeetrf' => '&#x02128;',
+	'AMP' => '&#x0026',
+	'COPY' => '&#x00A9',
+	'GT' => '&#x003E',
+	'LT' => '&#x003C',
+	'QUOT' => '&#x0022',
+	'REG' => '&#x00AE',
+	'TRADE' => '&#x2122'
 );
 
 sub name2numbered {
