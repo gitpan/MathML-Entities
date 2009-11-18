@@ -1,5 +1,11 @@
 Revision history for Perl module MathML::Entities
 
+0.17 Wed Nov 18 01:55:00 2009
+    - Bring up-to-date with
+      XML Entity definitions for Characters
+      (W3C Working Draft 17 November 2009)
+      http://www.w3.org/TR/2009/WD-xml-entity-names-20091117/
+
 0.16 Fri Sep 25 17:55:00 2009
     - Convert HTML5 uppercase versions of
       XML's "safe five" entities to their

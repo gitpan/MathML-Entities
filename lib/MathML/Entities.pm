@@ -4,7 +4,7 @@
 # All Rights Reserved.
 # Licensed under the Perl Artistic License.
 #
-# Version: 0.16
+# Version: 0.17
 
 package MathML::Entities;
 
@@ -13,7 +13,7 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 our @EXPORT = qw( name2numbered name2utf8 );
-our $VERSION = '0.16';
+our $VERSION = '0.17';
 
 our %ENTITIES = (
 	'Alpha' => '&#x0391;',
@@ -489,7 +489,7 @@ our %ENTITIES = (
 	'bowtie' => '&#x022C8;',
 	'bsim' => '&#x0223D;',
 	'bsime' => '&#x022CD;',
-	'bsolhsub' => '&#x0005C;&#x02282;',
+	'bsolhsub' => '&#x27C8;',
 	'bump' => '&#x0224E;',
 	'bumpE' => '&#x02AAE;',
 	'bumpe' => '&#x0224F;',
@@ -634,7 +634,7 @@ our %ENTITIES = (
 	'supdsub' => '&#x02AD8;',
 	'supE' => '&#x02AC6;',
 	'supedot' => '&#x02AC4;',
-	'suphsol' => '&#x02283;&#x0002F;',
+	'suphsol' => '&#x027C9;',
 	'suphsub' => '&#x02AD7;',
 	'suplarr' => '&#x0297B;',
 	'supmult' => '&#x02AC2;',
@@ -665,7 +665,7 @@ our %ENTITIES = (
 	'Delta' => '&#x00394;',
 	'delta' => '&#x003B4;',
 	'epsi' => '&#x003F5;',
-	'epsiv' => '&#x003B5;',
+	'epsiv' => '&#x003F5;',
 	'eta' => '&#x003B7;',
 	'Gamma' => '&#x00393;',
 	'gamma' => '&#x003B3;',
@@ -684,7 +684,7 @@ our %ENTITIES = (
 	'Phi' => '&#x003A6;',
 	'phi' => '&#x003C6;',
 	'phis' => '&#x003D5;',
-	'phiv' => '&#x003C6;',
+	'phiv' => '&#x003D5;',
 	'Pi' => '&#x003A0;',
 	'pi' => '&#x003C0;',
 	'piv' => '&#x003D6;',
@@ -1552,7 +1552,7 @@ our %ENTITIES = (
 	'NotSquareSuperset' => '&#x02290;&#x00338;',
 	'NotSucceedsTilde' => '&#x0227F;&#x00338;',
 	'oopf' => '&#x1D560;',
-	'OverBar' => '&#x000AF;',
+	'OverBar' => '&#x0203E;',
 	'OverBrace' => '&#x023DE;',
 	'OverBracket' => '&#x023B4;',
 	'OverParenthesis' => '&#x023DC;',
@@ -1574,9 +1574,9 @@ our %ENTITIES = (
 	'RuleDelayed' => '&#x029F4;',
 	'sopf' => '&#x1D564;',
 	'Tab' => '&#x00009;',
-	'ThickSpace' => '&#x02009;&#x0200A;&#x0200A;',
+	'ThickSpace' => '&#x0205F;&#x0200A;',
 	'topf' => '&#x1D565;',
-	'UnderBar' => '&#x00332;',
+	'UnderBar' => '&#x0005F;',
 	'UnderBrace' => '&#x023DF;',
 	'UnderBracket' => '&#x023B5;',
 	'UnderParenthesis' => '&#x023DD;',
@@ -2112,10 +2112,10 @@ our %ENTITIES = (
 	'UpTeeArrow' => '&#x021A5;',
 	'upuparrows' => '&#x021C8;',
 	'urcorner' => '&#x0231D;',
-	'varepsilon' => '&#x003B5;',
+	'varepsilon' => '&#x003F5;',
 	'varkappa' => '&#x003F0;',
 	'varnothing' => '&#x02205;',
-	'varphi' => '&#x003C6;',
+	'varphi' => '&#x003D5;',
 	'varpi' => '&#x003D6;',
 	'varpropto' => '&#x0221D;',
 	'varrho' => '&#x003F1;',

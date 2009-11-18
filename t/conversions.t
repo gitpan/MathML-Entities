@@ -14,5 +14,5 @@ ok(name2numbered('&AMP;, &LT;, &GT;, &APOS; &QUOT;') eq '&amp;, &lt;, &gt;, &apo
 ok(name2utf8('&AMP;, &LT;, &GT;, &APOS; &QUOT;') eq '&amp;, &lt;, &gt;, &apos; &quot;', 'Uppercase safe five II');
 ok(name2numbered('&conint;d&Ffr;') eq '&#x0222E;d&#x1D509;', 'MathML entities to numeric char refs');
 ok(name2utf8('&conint;d&Ffr;') eq chr(8750).'d'.chr(120073), 'MathML entities to utf-8');
-ok(name2numbered('&ThickSpace;&bne;') eq '&#x02009;&#x0200A;&#x0200A;&#x0003D;&#x020E5;', 'Multiple character refs');
-ok(name2utf8('&ThickSpace;&bne;') eq chr(8201).chr(8202).chr(8202).chr(61).chr(8421), 'Multiple utf-8 characters');
+ok(name2numbered('&ThickSpace;&bne;') eq '&#x0205F;&#x0200A;&#x0003D;&#x020E5;', 'Multiple character refs');
+ok(name2utf8('&ThickSpace;&bne;') eq chr(8287).chr(8202).chr(61).chr(8421), 'Multiple utf-8 characters');
